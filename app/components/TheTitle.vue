@@ -1,7 +1,20 @@
 <template>
   <div>
-    <header-content />
-    <!-- <div class="relative -mt-12 lg:-mt-24">
+    <div class="pt-24">
+    <div
+      class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+    >
+      <div
+        class="flex flex-col w-full  justify-center  text-center"
+      >
+        <h1 class="my-10 text-5xl font-bold leading-tight">
+          {{ titlestring }}
+        </h1>
+        
+      </div>
+    </div>
+  </div>
+    <div class="relative -mt-12 lg:-mt-24">
       <svg
         viewBox="0 0 1428 174"
         version="1.1"
@@ -39,17 +52,15 @@
           </g>
         </g>
       </svg>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
-import HeaderContent from '@/components/HeaderContent'
+// import TitleContent from '@/components/TitleContent'
 
 export default {
-  name: 'Header',
-  components: {
-    'header-content': HeaderContent
-  }
+  name: 'TheTitle',
+  props: ['titlestring']
 }
 </script>

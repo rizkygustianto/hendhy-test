@@ -1,28 +1,21 @@
 <template>
   <div>
-    <hero />
-    <features />
-    <teasers />
-    <prices />
-    <call-to-action />
+    <the-title titlestring='Journal'/>
+    <!-- <about-content /> -->
+   <Blogs />
+    
   </div>
 </template>
 
 <script>
-import Hero from '@/components/Hero'
-import Features from '@/components/Features'
-import Teasers from '@/components/Teasers'
-import Prices from '@/components/Prices'
-import CallToAction from '@/components/CallToAction'
+import Blogs from '@/components/Blogs'
+import TheTitle from '@/components/TheTitle'
 
 export default {
   name: 'Blog',
   components: {
-    hero: Hero,
-    features: Features,
-    teasers: Teasers,
-    prices: Prices,
-    'call-to-action': CallToAction
+    Blogs,
+    'the-title': TheTitle
   }
 }
 </script>
